@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    injector (0.1.0)
+    rails-inject (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -19,9 +19,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
-  injector!
   minitest (~> 5.0)
   pry
+  rails-inject!
   rake (~> 10.4.2)
 
 BUNDLED WITH

@@ -16,12 +16,12 @@ And then execute:
 
 Inherit a class from this to serve as an interface and define empty method blocks to implement in a concrete class.
 
-Any `< Injector::Injectable` class will check the implementation contract on a `.new` invocation. If it fails, then an exception is thrown.
+Any `< RailsInject::Injectable` class will check the implementation contract on a `.new` invocation. If it fails, then an exception is thrown.
 
 An implementable interface class would take the form of
 
 ```ruby
-class MyClient < Injector::Injectable
+class MyClient < RailsInject::Injectable
   def some_interface_method(id)
   end
 end
@@ -49,7 +49,7 @@ To wire up the implementation, configure a provider in your Rails project and us
 
 my_client_config = { url: 'http://something.com' }
 
-Injector::Provider.register do |provider|
+RailsInject::Provider.register do |provider|
    provider.add('MyClient', MyClientImplementation.new(my_client_config))
    # Register by class reference
    provider.add(MyModule::MyClient, MyModule::MyClientImplementation.new(my_client_config))
@@ -62,10 +62,10 @@ Currently, no factories are available. To provide a configured container, use th
 
 ```ruby
 # Provide by literal class name
-@my_client = Injector::Provider.provide('MyClient')
+@my_client = RailsInject::Provider.provide('MyClient')
 
 # Provide by class reference
-@my_client = Injector::Provider.provide(MyModule::MyClient)
+@my_client = RailsInject::Provider.provide(MyModule::MyClient)
 ```
 
 ## Contributing

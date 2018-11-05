@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "injector/version"
+require "rails_inject/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "rails-inject"
-  spec.version       = Injector::VERSION
+  spec.version       = RailsInject::VERSION
   spec.authors       = ["Matt Henry"]
   spec.email         = ["mhenry@evidation.com"]
 
