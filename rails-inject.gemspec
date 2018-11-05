@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "rails_inject/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "rails-inject"
+  spec.name          = "rails_inject"
   spec.version       = RailsInject::VERSION
   spec.authors       = ["Matt Henry"]
   spec.email         = ["mhenry@evidation.com"]
 
   spec.summary       = %q{DI Container for Rails}
   spec.description   = %q{Fetatues: \n- Easily wire up an interface \n- Verify contract is fulfilled \n- Provide access to implementation throughout the application}
-  spec.homepage      = "https://github.com/mh-eh-gh/rails-inject"
+  spec.homepage      = "https://github.com/mh-eh-gh/rails_inject"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

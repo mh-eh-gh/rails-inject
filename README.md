@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails-inject', :git => 'https://github.com/mh-eh-gh/rails-inject.git'
+gem 'rails_inject', :git => 'https://github.com/mh-eh-gh/rails_inject.git'
 ```
 
 And then execute:

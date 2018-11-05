@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-inject (0.1.0)
+    rails_inject (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -21,7 +21,7 @@ DEPENDENCIES
   bundler (~> 1.16)
   minitest (~> 5.0)
   pry
-  rails-inject!
+  rails_inject!
   rake (~> 10.4.2)
 
 BUNDLED WITH
