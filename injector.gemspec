@@ -6,12 +6,12 @@ require "injector/version"
 Gem::Specification.new do |spec|
   spec.name          = "injector"
   spec.version       = Injector::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["Matt Henry"]
   spec.email         = ["mhenry@evidation.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{DI Container for Rails}
+  spec.description   = %q{Fetatues: \n- Easily wire up an interface \n- Verify contract is fulfilled \n- Provide access to implementation throughout the application}
+  spec.homepage      = "https://github.com/mh-eh-gh/rails-inject"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,6 +33,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 10.4.2"
   spec.add_development_dependency "minitest", "~> 5.0"
 end
