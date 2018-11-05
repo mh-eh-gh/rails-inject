@@ -1,4 +1,4 @@
-module Injector
+module RailsInject
   class Provider
 
     def self.register

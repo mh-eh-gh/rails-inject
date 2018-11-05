@@ -1,9 +1,9 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "injector"
+require "rails_inject"
 
 require "minitest/autorun"
 
-class MyClient < Injector::Injectable
+class MyClient < RailsInject::Injectable
   def some_interface_method(id)
   end
 end

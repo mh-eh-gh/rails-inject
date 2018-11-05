@@ -1,7 +1,7 @@
-require "injector/version"
-require "injector/provider"
+require "rails_inject/version"
+require "rails_inject/provider"
 
-module Injector
+module RailsInject
   # A simple DI container
   #
   # Usage: Inherit a class from this to serve as an interface and define empty
